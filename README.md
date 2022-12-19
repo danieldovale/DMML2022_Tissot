@@ -11,7 +11,8 @@
 ├── README.md
 │
 ├── Code
-│   └──4models.ipynb     
+│   └──4models.ipynb
+│   └──tests.ipynb
 │   └──Solution.ipynb
 │
 ├── Data
@@ -33,6 +34,23 @@ The project goal was to predict the difficulty (A1 to C2) of a French text. The 
 | Ben, on est tous débordés quoi. |  A1 | 
 | Un petit garçon : Ben trois dans un nid et dans l'autre, y'en a deux | A2 | 
 | J'ai été en forme toute la matinée | A2  | 
+
+Once a model gave satisfactory accuracy, we trained the model once again without splitting it to predict the difficulty of the text in **unlabelled_test_data.csv**, which contains only one column with text. 
+
+
+
+
+
+# Results
+| | Logistic Regression  | kNN | Decision Tree | Random Forest | Other |
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | 
+| Precision | | | | |
+| Recall | | | | |
+| F1-score | | | | 
+| Accuracy | | | | |
+
+## Confusion matrixes 
+
 
 
 
