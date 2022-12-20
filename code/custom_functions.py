@@ -1,3 +1,5 @@
+from sklearn.metrics import confusion_matrix, accuracy_score, precision_score, recall_score, f1_score
+
 def evaluate(true, pred):
     precision = precision_score(true, pred, average = 'weighted')
     recall = recall_score(true, pred, average = 'weighted')
