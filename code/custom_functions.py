@@ -14,3 +14,12 @@ def evaluate(true, pred):
     sns.heatmap(pd.DataFrame(confusion_matrix(true, pred)), annot=True, cmap='Oranges', fmt='.7g');
     return df
 
+def prediction(data, name, download = False):
+    df = pd.DataFrame(data = data)
+    df.index.names = ['id']
+    df.rename(columns = {0:'difficulty'}, inplace = True)
+    file_name = name + ".csv"
+    df.to_csv(file_name)
+    if download == True:
+      files.download(file_name)
+    return df.head()
