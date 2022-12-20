@@ -1,6 +1,7 @@
 from sklearn.metrics import confusion_matrix, accuracy_score, precision_score, recall_score, f1_score
 import seaborn as sns
 import pandas as pd
+from google.colab import files
 
 
 def evaluate(true, pred):
