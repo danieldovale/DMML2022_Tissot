@@ -31,6 +31,15 @@ def evaluate(true, pred):
     return df
 
 
+def class_accuracy(y_test, y_pred):
+  unique, counts = np.unique(y_test, return_counts=True)
+  target = dict(zip(unique, counts))
+  diagonal = confusion_matrix(y_test, y_pred_lr).diagonal()
+  percentages = diagonal / np.array(list(target.values()))
+  for index, key in enumerate(target.keys()):
+    print(f'{key}: {percentages[index]:.2f}%')
+
+    
 def pred_compare_df(X_test, y_test, y_pred):
     tempdf_1 = pd.concat([X_test, y_test], axis = 1).reset_index(drop=True)
     y_pred_df = pd.Series(y_pred)
@@ -42,7 +51,8 @@ def pred_compare_df(X_test, y_test, y_pred):
 def compare(df, i):
   temp = df.iloc[i]
   print("sentence:\t\t%s\ndifficulty:\t\t%s\npredicted difficulty:\t%s\ncorrect prediction:\t%s" % (temp["sentence"], temp["difficulty"], temp["predicted difficulty"], temp['correct prediction']))
-
+   
+    
 def prediction(data, name, download = False):
     df = pd.DataFrame(data = data)
     df.index.names = ['id']
@@ -53,6 +63,7 @@ def prediction(data, name, download = False):
       files.download(file_name)
     return df.head()
 
+
 def spacy_tokenizer(sentence):
     doc = sp(sentence)
     stop_words = nltk.corpus.stopwords.words("french")
@@ -61,6 +72,7 @@ def spacy_tokenizer(sentence):
     mytokens = [ word.lemma_.lower().strip() if word.lemma_ != "-PRON-" else word.lower_ for word in doc ]
     mytokens = [ word for word in mytokens if word not in punctuations and word not in stop_words ]
     return mytokens
+
 
 def get_info(df):
  
