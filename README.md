@@ -53,7 +53,6 @@ Once a model gave satisfactory accuracy, we trained the model once again without
 | **F1-score**  | 0.4640 | 0.3501 | | 
 | **Accuracy**  | 0.4667 | 0.3594 | | |
 
-## Confusion matrixes 
 
 
 
