@@ -34,7 +34,7 @@ def evaluate(true, pred):
 def pred_compare_df(X_test, y_test, y_pred):
     tempdf_1 = pd.concat([X_test, y_test], axis = 1).reset_index(drop=True)
     y_pred_df = pd.Series(y_pred)
-    tempdf_2 = pd.concat([tempdf_1, y_pred_DF], axis =1).rename(columns = {0: 'predicted difficulty'}) 
+    tempdf_2 = pd.concat([tempdf_1, y_pred_df], axis =1).rename(columns = {0: 'predicted difficulty'}) 
     tempdf_3 = pd.Series(tempdf_2['difficulty'] == tempdf_2['predicted difficulty'])
     final_df = pd.concat([tempdf_2, tempdf_3], axis = 1).rename(columns = {0: 'correct prediction'}) 
     return final_df
