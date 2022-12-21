@@ -43,7 +43,7 @@ Once a model gave satisfactory accuracy, we trained the model once again without
 
 # Results
 | | Logistic Regression  | kNN | Decision Tree | Random Forest | Other |
-| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | 
+| ------------- | :-------------: | :-------------: | :-------------: | :-------------: | :-------------: | 
 | Precision | 0.4556 | 0.4192 | | |
 | Recall    | 0.4667 | 0.3594 | | |
 | F1-score  | 0.4640 | 0.3501 | | 
