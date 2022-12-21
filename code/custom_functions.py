@@ -30,6 +30,19 @@ def evaluate(true, pred):
     sns.heatmap(pd.DataFrame(confusion_matrix(true, pred)), annot=True, cmap='Oranges', fmt='.7g');
     return df
 
+
+def pred_compare_df(X_test, y_test, y_pred):
+    temp_df_1 = pd.concat([X_test, y_test], axis = 1).reset_index(drop=True)
+    y_pred_df = pd.Series(y_pred)
+    temp_df_2 = pd.concat([tempdf1, y_pred_DF], axis =1).rename(columns = {0: 'predicted difficulty'}) 
+    temp_df_3 = pd.Series(tempdf2['difficulty'] == tempdf2['predicted difficulty'])
+    final_df = pd.concat([tempdf2, tempdf3], axis = 1).rename(columns = {0: 'correct prediction'}) 
+    return final_df
+
+def compare(df, i):
+  temp = df.iloc[i]
+  print("sentence:\t\t%s\ndifficulty:\t\t%s\npredicted difficulty:\t%s\ncorrect prediction:\t%s" % (temp["sentence"], temp["difficulty"], temp["predicted difficulty"], temp['correct prediction']))
+
 def prediction(data, name, download = False):
     df = pd.DataFrame(data = data)
     df.index.names = ['id']
