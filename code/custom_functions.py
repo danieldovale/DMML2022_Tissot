@@ -34,7 +34,7 @@ def evaluate(true, pred):
 def class_accuracy(y_test, y_pred):
   unique, counts = np.unique(y_test, return_counts=True)
   target = dict(zip(unique, counts))
-  diagonal = confusion_matrix(y_test, y_pred_lr).diagonal()
+  diagonal = confusion_matrix(y_test, y_pred).diagonal()
   percentages = diagonal / np.array(list(target.values()))
   for index, key in enumerate(target.keys()):
     print(f'{key}: {percentages[index]:.2f}%')
