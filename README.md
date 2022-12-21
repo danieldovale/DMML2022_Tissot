@@ -4,7 +4,8 @@
 
 ## Team TISSOT: Group members
 * d
-* g
+* Giacomo Rattazzi![image](https://user-images.githubusercontent.com/114418718/209024610-4db06e2e-9ae8-4e44-8f69-cdf9f93c89be.png)
+
 
 # Repository structure 
 ```
