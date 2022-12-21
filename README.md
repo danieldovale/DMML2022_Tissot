@@ -3,8 +3,9 @@
 
 
 ## Team TISSOT: Group members
-* d
-* Giacomo Rattazzi![image](https://user-images.githubusercontent.com/114418718/209024610-4db06e2e-9ae8-4e44-8f69-cdf9f93c89be.png)
+* Giacomo Rattazzi
+* João Daniel Do Vale Anes 
+
 
 
 # Repository structure 
@@ -49,10 +50,11 @@ Once a model gave satisfactory accuracy, we trained the model once again without
 # Results
 | | Logistic Regression  | kNN | Decision Tree | Random Forest | Other |
 | ------------- | :-------------: | :-------------: | :-------------: | :-------------: | :-------------: | 
-| **Precision** | 0.4556 | 0.4192 | | |
-| **Recall**    | 0.4667 | 0.3594 | | |
-| **F1-score**  | 0.4640 | 0.3501 | | 
-| **Accuracy**  | 0.4667 | 0.3594 | | |
+| **Precision**         | 0.4556 | 0.4192 | 0.3158 | 0.4228 |
+| **Recall**            | 0.4667 | 0.3594 | 0.3156 | 0.4135 |
+| **F1-score**          | 0.4640 | 0.3501 | 0.3008 | 0.4000 |
+| **Accuracy**          | 0.4667 | 0.3594 | 0.3156 | 0.4135 |
+| **Submission score**  | **0.46583** | **0.34083** | **0.31833** | **0.39500** |
 
 
 
