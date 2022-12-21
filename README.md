@@ -8,11 +8,11 @@
 
 # Repository structure 
 ```
-├── README.md
+
 │
 ├── Code
 │   └──4models.ipynb
-│   └──tests.ipynb
+│   └──Word2Vec.ipynb
 │   └──Solution.ipynb
 │
 ├── Data
@@ -20,6 +20,10 @@
 │   └──training_data.csv
 │   └──unlabelled_test_data.csv 
 │ 
+├── Documents
+│   └── CustomFunctionsDocumentation.ipynb
+│ 
+│── README.md
 ```
 
 # Context 
