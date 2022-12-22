@@ -11,7 +11,9 @@
 
 # Context 
 
-The project goal was to predict the difficulty (A1 to C2) of a French text. The idea was to build models trained on `training_data.csv`. This csv contains two columns, the first being a French text and the second one being the attributed difficulty. Here is an extract:
+The project goal was to predict the difficulty (A1 to C2) of French sentences. To achieve this goal, we used a training dataset (`training_data.csv`) containing 4800 labeled sentences and a separate test dataset of 1200 unlabeled sentences. Our approach involved building and training models using the labeled data from the training dataset and using these models to make predictions on the difficulty level of the sentences in the test dataset. Once a model gave satisfactory accuracy, we measured its performance by predicting difficulty on unseen data `unlabelled_test_data.csv` and submitted to Kaggle for evaluation.
+
+Extract of `training_data.csv`:
 
 | sentence  | difficulty |
 | ------------- | ------------- |
@@ -22,7 +24,6 @@ The project goal was to predict the difficulty (A1 to C2) of a French text. The 
 | Un petit garçon : Ben trois dans un nid et dans l'autre, y'en a deux | A2 | 
 | J'ai été en forme toute la matinée | A2  | 
 
-Once a model gave satisfactory accuracy, we measured its performance by predicting difficulty on unseen data: `unlabelled_test_data.csv`.
 # Repository structure 
 ```
 
