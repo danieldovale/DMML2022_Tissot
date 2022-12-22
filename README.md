@@ -30,7 +30,7 @@ Once a model gave satisfactory accuracy, we measured its performance by predicti
 ├── Code
 │   └──4models.ipynb
 │   └──Word2VecLR.ipynb
-│   └──W2VEnsembles.ipynb
+│   └──Ensemble_W2V.ipynb
 │   └──Camembert.ipynb
 │   └──functions.py
 │
@@ -41,6 +41,7 @@ Once a model gave satisfactory accuracy, we measured its performance by predicti
 │ 
 ├── Documents
 │   └── CustomFunctionsDocumentation.ipynb
+│   └── summary.md
 │ 
 │── README.md
 ```
