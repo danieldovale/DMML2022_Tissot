@@ -30,18 +30,18 @@
 ```
 
 * Code
-1. 4Models.ipynb: first part of the project. This notebook contains a short visualization of the data, and a demonstration of four different models without doing any type of data cleaning. The four models used were Logistic Regression, KNeighbors Classifier, Decision Tree Classifier, and Random Forest CLassifier. The four model employed a TF-IDF vectorizer to transform the sentences into vectors. 
-2. Word2VecLR.ipynb: Attempt at improving accuracy by using Word2Vec instead of TF-IDF for vectorization. This notebook also contains steps to retrieve additionnal information about the data, which is then used in conjunction with the Word2Vec vectors to predict text difficulty using a Logistic Regression. This new model seemingly had issues with overfitting,
-3. EnsembleW2V.ipynb: In this notebook we attempted to solve the overfitting issue that the previous Logistic Regression had using Ensemble Classifiers. We used both TF-IDF and Word2Vec vectorization.
-4. functions.py: python file containing custom functions we wrote while building our models.
+  1. 4Models.ipynb: first part of the project. This notebook contains a short visualization of the data, and a demonstration of four different models without doing any type of data cleaning. The four models used were Logistic Regression, KNeighbors Classifier, Decision Tree Classifier, and Random Forest CLassifier. The four model employed a TF-IDF vectorizer to transform the sentences into vectors. 
+  2. Word2VecLR.ipynb: Attempt at improving accuracy by using Word2Vec instead of TF-IDF for vectorization. This notebook also contains steps to retrieve additionnal information about the data, which is then used in conjunction with the Word2Vec vectors to predict text difficulty using a Logistic Regression. This new model seemingly had issues with overfitting,
+  3. EnsembleW2V.ipynb: In this notebook we attempted to solve the overfitting issue that the previous Logistic Regression had using Ensemble Classifiers. We used both TF-IDF and Word2Vec vectorization.
+  4. functions.py: python file containing custom functions we wrote while building our models.
 
 * Data
-1. sample_submission.csv: sample csv file with the format needed for the kaggle submissions.
-2. training_data.csv: csv file containing 4800 rows with french sentences and an attributed difficulty.
-3. unlabelled_test_data.csv: csv file containing 1200 rows of unlabeled french sentences.
+  1. sample_submission.csv: sample csv file with the format needed for the kaggle submissions.
+  2. training_data.csv: csv file containing 4800 rows with french sentences and an attributed difficulty.
+  3. unlabelled_test_data.csv: csv file containing 1200 rows of unlabeled french sentences.
 
 * Documents
-1. CustomFunctionsDocumentation.ipynb: Notebook documenting the custom functions we wrote in the functions.py file.
+  1. CustomFunctionsDocumentation.ipynb: Notebook documenting the custom functions we wrote in the functions.py file.
 
 # Context 
 
