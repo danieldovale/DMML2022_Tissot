@@ -61,9 +61,11 @@ Once a model gave satisfactory accuracy, we measured its performance by testing 
 
 
 
+# RoadMap
 
+![roadmap](https://user-images.githubusercontent.com/114418718/209168203-15e7a47d-48f5-46aa-819d-a3236e90f14f.png)
 
-
+More information about the steps in our project is available ![here](https://)
 
 # Results
 | | Logistic Regression  | kNN | Decision Tree | Random Forest | Ensemble & W2V |
