@@ -59,6 +59,7 @@ Once a model gave satisfactory accuracy, we measured its performance by predicti
 
 * Documents
   1. `CustomFunctionsDocumentation.ipynb`: Notebook documenting the custom functions we wrote in the functions.py file.
+  2. `summary.md`: short summary of the steps we took for this project.
 
 
 
