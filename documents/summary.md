@@ -23,16 +23,16 @@ To try and improve the accuracy further, we trained the model multiple times wit
 
 # Notebook 3: Ensemble.ipynb 
 
+To overcome the problem of overfitting, we have decided to utilize an Ensemble classifier. Ensemble methods are known to reduce both bias and variance, effectively reducing the occurrence of overfitting. We have to with two Ensemble methods : the VotingClassifier from scikit-learn and the EnsembleVoteClassifier from Mlxtend (machine learning extensions). Both methods yielded similar results, so we ultimately decided to proceed with the EnsembleVoteClassifier. 
 
+The EnsembleVoteClassifier is an ensemble method that combines multiple classifiers and makes a prediction based on the majority vote of the classifiers. In this model, we can choose between a hard or soft voting method. In soft voting, we predict the class labels by averaging the class-probabilities. In hard voting , we predict the final class label as the class that has been predicted most frequently by the classification models. We have tested with both soft and hard voting, and it was the hard voting performed often better.
 
-# Notebook 4: Camembert.ipynb
+We tested by using a combination of different classifiers with the TfidfVectorizer, which converts all words to lowercase. We also tried using the Word2Vec vectorized and a combination of Decision Tree, Linear SVC, and kNN classifiers. In an effort to improve the predictions, we attempted to remove stop words, numbers, and punctuations, but this actually decreased the accuracy of the predictions. To improve the model's performance, we used classifiers with hyperparameters and conducted a lot of tests. We eventually found a combination that significantly improved the accuracy of the predictions, resulting in an accuracy rate of approximately 51 for all metrics. 
 
-⚠️ Disclaimer: This Colab notebook contains the steps to train a CamemBERT model using code that was taken from this [article.](https://www.kaggle.com/code/houssemayed/camembert-for-french-tweets-classification/notebook#CamemBERT-for-text-classification-task)
+After testing a variety of classifiers with different parameters, we found the above mentioned combination that had a kaggle submission score of 0.49166 when predicting the level of each sentence. This indicates that the model correctly predicts the difficulty at the probability of almost 50%. It seems that it partially solved the overfitting issue.
 
-Please note that we did not write this code ourselves and were simply using it for curiosity and testing purposes. Any submissions to Kaggle using this model were done after the competition deadline.
+Additionally, we believe that the Ensemble model with Word2Vec can still be slightly improved with further fine-tuning. However, there are other more effective models such as Bert or camemBert that are pretrained and could potentially achieve a higher prediction accuracy.
 
 # Conclusion
 
-In conclusion, it would have been more effective to carefully analyze the data and thoroughly review the documentation for different models before attempting to use them for our project. Our mistake was just throwing different models with various tokenization and vectorization techniques without fully understanding their implications. This didn’t work out too well since our best model only showed a slight improvement of 3% compared to our initial logistic regression model. 
-
-To improve the success of future projects, it would be important to take the time to thoroughly evaluate and understand the data and available models before proceeding.
+In conclusion, it would have been more effective to carefully analyze the data and thoroughly review the documentation for different models before attempting to use them for our project. Our mistake was just throwing different models with various tokenization and vectorization techniques without fully understanding their implications. This didn’t work out too well since our best model only showed a slight improvement of 3% compared to our initial logistic regression model. To improve the success of future projects, it would be important to take the time to thoroughly evaluate and understand the data and available models before proceeding.
