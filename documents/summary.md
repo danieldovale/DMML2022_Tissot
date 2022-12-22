@@ -23,3 +23,13 @@ To try and improve the accuracy further, we trained the model multiple times wit
 
 # Notebook 3: Ensemble.ipynb 
 
+
+
+# Notebook 4: Camembert.ipynb
+
+⚠️ Disclaimer: This Colab notebook contains the steps to train a CamemBERT model using code that was taken from this [article.](https://www.kaggle.com/code/houssemayed/camembert-for-french-tweets-classification/notebook#CamemBERT-for-text-classification-task),
+Please note that we did not write this code ourselves and were simply using it for curiosity and testing purposes. Any submissions to Kaggle using this model were done after the competition deadline.
+
+# Conclusion
+
+In conclusion, it would have been more effective to carefully analyze the data and thoroughly review the documentation for different models before attempting to use them for our project. Our mistake was just throwing different models with various tokenization and vectorization techniques without fully understanding their implications. This didn’t work out too well since our best model only showed a slight improvement of 3% compared to our initial logistic regression model. To improve the success of future projects, it would be important to take the time to thoroughly evaluate and understand the data and available models before proceeding.
