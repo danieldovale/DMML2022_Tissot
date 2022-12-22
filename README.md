@@ -6,7 +6,7 @@
 * Giacomo Rattazzi
 * João Daniel Do Vale Anes 
 
-![alt text](https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Tissot_Logo.svg/2560px-Tissot_Logo.svg.png)
+![alt text](https://3athlonjurassikseries.ch/wp-content/uploads/2022/02/tissot-logo.jpg)
 
 
 # Context 
