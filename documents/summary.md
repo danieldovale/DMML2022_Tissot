@@ -1,3 +1,4 @@
+# Context
 The project goal was to predict the difficulty (A1 to C2) of a French text. To achieve this goal, we utilized a training dataset containing 4800 labeled sentences and a separate test dataset of 1200 unlabeled sentences. Our approach involved building and training models using the labeled data from the training dataset and using these models to make predictions on the difficulty level of the sentences in the test dataset. These predictions were then submitted to a competition on Kaggle for evaluation.
 
 # Notebook 1: 4Models.ipynb 
