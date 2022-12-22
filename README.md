@@ -67,13 +67,13 @@ Once a model gave satisfactory accuracy, we trained the model once again without
 
 
 # Results
-| | Logistic Regression  | kNN | Decision Tree | Random Forest | Other |
+| | Logistic Regression  | kNN | Decision Tree | Random Forest | Ensemble & W2V |
 | ------------- | :-------------: | :-------------: | :-------------: | :-------------: | :-------------: | 
-| **Precision**         | 0.4556 | 0.4192 | 0.3158 | 0.4228 |
-| **Recall**            | 0.4667 | 0.3594 | 0.3156 | 0.4135 |
-| **F1-score**          | 0.4640 | 0.3501 | 0.3008 | 0.4000 |
-| **Accuracy**          | 0.4667 | 0.3594 | 0.3156 | 0.4135 |
-| **Submission score**  | **0.46583** | **0.34083** | **0.31833** | **0.39500** |
+| **Precision**         | 0.4556 | 0.4192 | 0.3158 | 0.4228 | 0.5135
+| **Recall**            | 0.4667 | 0.3594 | 0.3156 | 0.4135 | 0.5169
+| **F1-score**          | 0.4640 | 0.3501 | 0.3008 | 0.4000 | 0.5135
+| **Accuracy**          | 0.4667 | 0.3594 | 0.3156 | 0.4135 | 0.5121
+| **Submission score**  | **0.46583** | **0.34083** | **0.31833** | **0.39500** | **0.49166**
 
 
 
