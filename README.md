@@ -14,8 +14,9 @@
 │
 ├── Code
 │   └──4models.ipynb
-│   └──Word2Vec.ipynb
-│   └──Solution.ipynb
+│   └──Word2VecLR.ipynb
+│   └──W2VEnsembles.ipynb
+│   └──Camembert.ipynb
 │
 ├── Data
 │   └──sample_submission.csv
