@@ -22,8 +22,7 @@ The project goal was to predict the difficulty (A1 to C2) of a French text. The 
 | Un petit garçon : Ben trois dans un nid et dans l'autre, y'en a deux | A2 | 
 | J'ai été en forme toute la matinée | A2  | 
 
-Once a model gave satisfactory accuracy, we trained the model once again without splitting it to predict the difficulty of the text in **unlabelled_test_data.csv**, which contains only one column with text. 
-
+Once a model gave satisfactory accuracy, we measured its performance by testing it on unseen data. **unlabelled_test_date**
 # Repository structure 
 ```
 
