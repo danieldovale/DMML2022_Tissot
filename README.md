@@ -33,6 +33,7 @@ Once a model gave satisfactory accuracy, we trained the model once again without
 │   └──Word2VecLR.ipynb
 │   └──W2VEnsembles.ipynb
 │   └──Camembert.ipynb
+│   └──functions.py
 │
 ├── Data
 │   └──sample_submission.csv
